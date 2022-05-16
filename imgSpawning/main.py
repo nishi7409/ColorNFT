@@ -11,7 +11,7 @@ async def root():
     return {"message": "Hello World"}
 
 @app.get("/nfts/{id}.json")
-async def get_or_generate_nft(id: int):
+async def generateNFT(id: int):
     redValue = randint(0, 255) 
     greenValue = randint(0, 255) 
     blueValue = randint(0, 255) 
